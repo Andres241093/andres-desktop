@@ -2,28 +2,28 @@
 <div class="taskbar">
     <div class="icons">
         <div class="icons-left">
-            <a href="#start-menu-modal" id="start-menu">
-              <img class="fa-windows windows-icon" [src]="'assets/images/windows.png'" alt="">
+            <a id="start-menu">
+              <img class="windows-icon" [src]="'assets/images/windows.png'" alt="">
             </a>
-            <a href="#search" id="search"></a>
-            <a href="#tabs" id="tabs-windows"></a>
-            <a href="#" class="px"></a>
-            <a href="#folder" id="folder" class="border"></a>
-            <a href="#chrome-pop-up" id="chrome" class="border"></a>
+            <a id="search"></a>
+            <a id="tabs-windows"></a>
+            <a class="px"></a>
+            <a id="folder" class="border"></a>
+            <a id="chrome" class="border"></a>
         </div>
         <div class="icons-right">
-            <a href="#up" id="up" class="small-icons"><i class="fas fa-chevron-up"></i></a>
-            <a href="#sound-modal" id="sound" class="small-icons"></a>
-            <a href="#wifi-modal" id="wifi" class="small-icons"></a>
+            <a id="up" class="small-icons"><i class="fas fa-chevron-up"></i></a>
+            <a id="sound" class="small-icons"></a>
+            <a id="wifi" class="small-icons"></a>
             <div class="datetime">
                 <span class="hour">17:44</span>
                 <span class="date">25/11/2022</span>
             </div>
-            <a href="#notifications" id="notifications">
+            <a id="notifications">
               <img class="notifications-icon" [src]="'assets/images/notifications.png'" alt="">
             </a>
-            <a href="#" class="clear disabled"></a>
-            <a href="#" id="return"></a>
+            <a class="clear disabled"></a>
+            <a id="return"></a>
         </div>
     </div>
   </div>
@@ -39,22 +39,22 @@
             </a>
         </div> -->
         <div class="icon-desktop">
-            <a (click)="goToLink('https://andres-angular-template.netlify.app/')">
-                <img [src]="'assets/images/angular-logo.png'" alt="">
-                <span>Angular template</span>
-            </a>
-        </div>
-        <div class="icon-desktop">
             <a (click)="goToLink('https://andres-game-catalog.netlify.app/')">
                 <img [src]="'assets/images/gaming-catalog.ico'" alt="">
                 <span>Gaming Catalog</span>
+            </a>
+        </div>
+        <div class="icon-desktop">
+            <a (click)="goToLink('https://andres-angular-template.netlify.app/')">
+                <img [src]="'assets/images/angular-logo.png'" alt="">
+                <span>Angular template</span>
             </a>
         </div>
     </div>
   </div>
   
   <!-- Start menu -->
-  <div id="start-menu-modal">
+   <!-- <div id="start-menu-modal">
     <div id="user">
         <a class="push" href="#"><i class="fas fa-bars"></i></a>
         <a href="#"><i class="fas fa-user"></i></a>
@@ -97,4 +97,4 @@
             </div>
         </div>
     </div>
-  </div>
+  </div>-->

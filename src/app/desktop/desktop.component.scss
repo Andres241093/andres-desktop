@@ -31,17 +31,27 @@
     z-index: 1;
     margin-left: -8px;
     position: fixed;
+    height: 7vh;
     bottom: 0;
-    height: 5vh;
     width: 100%;
     background: #004172;
   }
 
-  @media (max-height: 900px) {
+  @media (max-width: 900px) {
+    .windows-icon {
+      width: 5vw !important;
+    }
+    .notifications-icon {
+      width: 3.5vw !important;
+      height: 3vh !important;
+      margin-top: 10px !important;
+    }
     .taskbar {
       height: 5vh;
+      top: 0;
     }
     .desktop {
+      margin-top: 5vh;
       width: 100%;
       height: 100%;
     }
