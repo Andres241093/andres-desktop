@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DesktopComponent {
 
+  goToLink(url: string): void{
+    window.open(url, "_blank");
+  }
 }

@@ -12,10 +12,12 @@
   }
   
   .desktop {
-    height: 95vh;
+    z-index: 0;
+    position: fixed; 
+    top: 0; 
+    left: 0;
     width: 100vw;
-    margin-left: -8px;
-    margin-top: -8px;
+    height: 100vh;
     background: url(/assets/images/windows-10-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -26,12 +28,23 @@
       Taskbar
   ========================================================================== */
   .taskbar {
+    z-index: 1;
     margin-left: -8px;
     position: fixed;
     bottom: 0;
-    height: 43px;
+    height: 5vh;
     width: 100%;
     background: #004172;
+  }
+
+  @media (max-height: 900px) {
+    .taskbar {
+      height: 5vh;
+    }
+    .desktop {
+      width: 100%;
+      height: 100%;
+    }
   }
   
   .taskbar .icons-left {
@@ -246,7 +259,7 @@
   .desktop .icon-desktop a {
     display: block;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
   }
   
   .desktop .icon-desktop img {
@@ -264,6 +277,7 @@
   .desktop .icon-desktop:hover {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
   }
   
   .desktop .icon-desktop:first-child {

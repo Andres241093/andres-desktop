@@ -32,10 +32,22 @@
   <div class="desktop">
     <!-- Icons on the desktop -->
     <div class="icons-dekstop">
-        <div class="icon-desktop">
+        <!-- <div class="icon-desktop">
             <a href="#">
                 <img src="https://raw.githubusercontent.com/gcazin/pure-css-windows-10-desktop/master/icons/code.png" alt="">
                 <span>Code</span>
+            </a>
+        </div> -->
+        <div class="icon-desktop">
+            <a (click)="goToLink('https://andres-angular-template.netlify.app/')">
+                <img [src]="'assets/images/angular-logo.png'" alt="">
+                <span>Angular template</span>
+            </a>
+        </div>
+        <div class="icon-desktop">
+            <a (click)="goToLink('https://andres-game-catalog.netlify.app/')">
+                <img [src]="'assets/images/gaming-catalog.ico'" alt="">
+                <span>Gaming Catalog</span>
             </a>
         </div>
     </div>
