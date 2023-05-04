@@ -39,12 +39,10 @@
 
   @media (max-width: 900px) {
     .windows-icon {
-      width: 5vw !important;
+      width: 10vw !important;
     }
-    .notifications-icon {
-      width: 3.5vw !important;
-      height: 3vh !important;
-      margin-top: 10px !important;
+    .icons-right {
+      display: none !important;
     }
     .taskbar {
       height: 5vh;
