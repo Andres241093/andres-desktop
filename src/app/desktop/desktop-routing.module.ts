@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DesktopComponent } from './desktop.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./desktop/desktop.module').then(m => m.DesktopModule)
+    component: DesktopComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class DesktopRoutingModule { }
