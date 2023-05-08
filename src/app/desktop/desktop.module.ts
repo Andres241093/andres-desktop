@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { DesktopRoutingModule } from './desktop-routing.module';
 import { DesktopComponent } from './desktop.component';
+import { TerminalComponent } from '../terminal/terminal.component';
 
 
 @NgModule({
   declarations: [
-    DesktopComponent
+    DesktopComponent,
+    TerminalComponent
   ],
   imports: [
     CommonModule,
